@@ -1,0 +1,22 @@
+{
+  "name": "telegram-bot-monitor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bunyan": "^1.8.1",
+    "lodash": "^4.12.0",
+    "moment": "^2.13.0",
+    "nedb": "^1.8.0",
+    "node-telegram-bot-api": "^0.21.1",
+    "pg": "^6.0.3",
+    "q": "^1.4.1",
+    "request": "^2.69.0"
+  }
+}
