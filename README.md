@@ -13,5 +13,5 @@ HTTP_PORT=<Port the http server will be listening on>
 
 ### APIs Exposed:
 
-`/send_message/user/:id` The bot will send a message to this user id
-`/send_message/group/:id` The bot will send a message to this group id
+* `/send_message/user/:id` The bot will send a message to this user id
+* `/send_message/group/:id` The bot will send a message to this group id
