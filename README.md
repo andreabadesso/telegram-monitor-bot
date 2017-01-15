@@ -16,6 +16,11 @@ HTTP_PORT=<Port the http server will be listening on>
 * `/send_message/user/:id` The bot will send a message to this user id
 * `/send_message/group/:id` The bot will send a message to this group id
 
+#### Example
+
+`curl -X POST "http://localhost:4000/send_message/user/1823811" -H "Content-Type: application/json" -d '{"message":
+"Teste"}'`
+
 ### Running with Docker:
 
 ```
