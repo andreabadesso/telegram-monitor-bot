@@ -15,3 +15,17 @@ HTTP_PORT=<Port the http server will be listening on>
 
 * `/send_message/user/:id` The bot will send a message to this user id
 * `/send_message/group/:id` The bot will send a message to this group id
+
+### Running with Docker:
+
+```
+docker build -t keeptrack/telegram-monitor .
+docker run -e "MONITOR_BOT_TOKEN=<TOKEN>" -e "MIDDLEWARE_API=<MIDDLEWARE_API>", -e "HTTP_PORT=<HTTP_PORT>" -p 4000:4000 -d keeptrack/telegram-middleware
+```
+
+#### Example:
+
+```
+docker build -t keeptrack/telegram-monitor .
+docker run -e "MONITOR_BOT_TOKEN=5881281:H9Aasjs9aAja9j9a9jsaj" -e "MIDDLEWARE_API=http://localhost:3000/telegram", -e "HTTP_PORT=4000" -p 4000:4000 -d keeptrack/telegram-middleware
+```
