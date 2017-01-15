@@ -66,12 +66,16 @@ function groupMessageReceived(message) {
     let time = moment(message.time).toISOString();
     let groupMessage = {
         id: '' + Math.abs(message.chat.id),
+        type: message.chat.type,
+        title: message.chat.title,
+        all_members_are_administrators: message.chat.all_members_are_administrators,
         body: message.text,
         time: time,
         from: {
             first_name: message.from.first_name,
             last_name: message.from.last_name,
-            userId: '' + message.from.id
+            userId: '' + message.from.id,
+            username: message.from.username
         }
     };
 
